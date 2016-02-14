@@ -19,6 +19,10 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7p9-Bj-7Es">
                                 <rect key="frame" x="250" y="87" width="100" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WPl-v7-eVh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -30,6 +34,12 @@
                             <constraint firstItem="7p9-Bj-7Es" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="250" id="egg-Fk-MGD"/>
                             <constraint firstItem="7p9-Bj-7Es" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="67" id="lME-Li-nNN"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="K8e-c7-wsG"/>
+                                <exclude reference="egg-Fk-MGD"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="textField" destination="7p9-Bj-7Es" id="UfJ-cE-4jT"/>
